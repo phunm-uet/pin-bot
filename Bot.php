@@ -107,7 +107,7 @@ class Bot
 		}
 		$result = $this->bot->auth->login($this->pinAcc['username'],$this->pinAcc['password']);
 		if (!$result) {
-		    echo $bot->getLastError();
+		    echo $this->bot->getLastError();
 		    die();
 		}		
 		return $this;
@@ -148,7 +148,7 @@ class Bot
 			    $link['description'],
 			    $link['link']
 			);
-			echo "Sleep $random second"
+			echo "Sleep $random second";
 			sleep($random);					
 		}
 	}
@@ -158,7 +158,7 @@ class Bot
 			$tmp = explode(":", $proxy);
 			$proxyIp = $tmp[0];
 			$proxyPort = $tmp[1];
-			$this->bot->getHttpClient()->useProxy($proxyIp, $port);
+			$this->bot->getHttpClient()->useProxy($proxyIp, $proxyPort);			
 		}
 		return $this;
 	}

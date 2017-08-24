@@ -13,8 +13,9 @@ echo "Nhap so tuong ung de chon tai khoan Pin : ";
 $id_account = (int)fgets(STDIN);
 $bot->setPinAcc($id_account);
 echo "Nhap proxy(neu muon) IP:PORT  ";
-$proxy = fgetc(STDIN);
-if(!$proxy){
+$proxy = fgets(STDIN);
+$proxy = trim($proxy);
+if($proxy){
 	$bot->userProxy($proxy);
 }
 
@@ -35,6 +36,24 @@ echo "Nhap tu khoa de bat dau pin san pham : ";
 $keyword = fgets(STDIN);
 $keyword = trim($keyword);
 $bot->fetchLinkByKeyword($keyword);
-$bot->pinLinks(5,30);	
+echo "Nhap min timout(second) default(300) : ";
+$minTimeOut = fgets(STDIN);
+$minTimeOut = trim($minTimeOut);
+if($minTimeOut){
+	$minTimeOut = (int) $minTimeOut;
+} else {
+	$minTimeOut = 300;
+}
+
+echo "Nhap max timout(second) default(600 : ";
+$maxTimeOut = fgets(STDIN) 
+$maxTimeOut = trim($maxTimeOut);
+if($minTimeOut){
+	$maxTimeOut = (int) $maxTimeOut;
+} else {
+	$maxTimeOut = 600;
+}
+
+$bot->pinLinks($minTimeOut,$maxTimeOut);	
 
 ?>
