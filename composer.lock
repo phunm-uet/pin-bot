@@ -1,0 +1,70 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "677e31f83d0dae5c1612b33a2707e4de",
+    "packages": [
+        {
+            "name": "seregazhuk/pinterest-bot",
+            "version": "5.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/seregazhuk/php-pinterest-bot.git",
+                "reference": "9b6b36802ab7d63586acbe57017838f24580147f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/seregazhuk/php-pinterest-bot/zipball/9b6b36802ab7d63586acbe57017838f24580147f",
+                "reference": "9b6b36802ab7d63586acbe57017838f24580147f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-fileinfo": "*",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "^0.4.4",
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "package",
+            "autoload": {
+                "files": [
+                    "src/Helpers/functions.php"
+                ],
+                "psr-4": {
+                    "seregazhuk\\PinterestBot\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Mit"
+            ],
+            "authors": [
+                {
+                    "name": "Seregey Zhuk",
+                    "email": "seregazhuk88@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP library for Pintrest",
+            "keywords": [
+                "lib",
+                "php",
+                "pinterest"
+            ],
+            "time": "2017-07-22T16:01:34+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
