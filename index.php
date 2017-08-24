@@ -46,7 +46,7 @@ if($minTimeOut){
 }
 
 echo "Nhap max timout(second) default(600 : ";
-$maxTimeOut = fgets(STDIN) 
+$maxTimeOut = fgets(STDIN);
 $maxTimeOut = trim($maxTimeOut);
 if($minTimeOut){
 	$maxTimeOut = (int) $maxTimeOut;
