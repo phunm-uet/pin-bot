@@ -81,7 +81,7 @@ class Bot
 	}
 
 	public function fetchLinkByKeyword($keyword){
-		$sql = "SELECT * FROM default_product WHERE title LIKE '%$keyword%' OR description LIKE '%$keyword%' OR link LIKE '%$keyword%'";
+		$sql = "SELECT * FROM default_product WHERE title LIKE '%$keyword%' OR description LIKE '%$keyword%'";
  		$result = mysqli_query($this->con,$sql);
  		$links = mysqli_fetch_all($result,MYSQLI_ASSOC);
  		$this->setLinks($links);
