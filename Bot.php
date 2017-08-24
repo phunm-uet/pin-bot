@@ -13,6 +13,8 @@ class Bot
 	public $boards;
 	public $board;
 	public $isBanned;
+	private $affilate;
+
 	/**
 	 * Ham khoi tao Bot
 	 */
@@ -146,7 +148,7 @@ class Bot
 			    $link['image'], 
 			    $this->board['id'], 
 			    $link['description'],
-			    $link['link']
+			    $link['link'].'?67840'
 			);
 			echo "Sleep $random second";
 			sleep($random);					
