@@ -147,8 +147,8 @@ class Bot
 			$this->bot->pins->create(
 			    $link['image'], 
 			    $this->board['id'], 
-			    $link['description'],
-			    $link['link'].'?67840'
+			    "#dogs #dog #".$links['keyword']." ".$link['description'],
+			    $link['link'].'?89535'
 			);
 			echo "Sleep $random second";
 			sleep($random);					
